@@ -1,0 +1,17 @@
+﻿@model Food
+@{
+    ViewBag.Title = "ReadForm";
+}
+
+<h2>ReadForm</h2>
+
+@using (Html.BeginForm("READ", "CRUD"))
+{
+    <div>
+        <label>Name</label>
+        @Html.TextBoxFor(m => m.Name)
+        <input type="submit" value="Search" />
+    </div>
+}
+
+

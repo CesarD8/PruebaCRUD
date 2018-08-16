@@ -1,0 +1,21 @@
+﻿@model Food
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (@Html.BeginForm("Save", "CRUD"))
+{
+<div>
+    <label> Name: </label>
+    @Html.TextBoxFor(f => f.Name)
+    <label> Price: </label>
+    @Html.TextBoxFor(f => f.Price)
+    <label> Style: </label>
+    @Html.TextBoxFor(f => f.Style)
+    <input type="submit" value="Submit" />
+</div>
+}
+

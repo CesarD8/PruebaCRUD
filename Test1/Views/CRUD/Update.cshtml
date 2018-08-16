@@ -1,0 +1,22 @@
+﻿@model Food
+@{
+    ViewBag.Title = "Update";
+}
+
+<h2>Update</h2>
+
+@using (@Html.BeginForm("UpdateInDB", "CRUD"))
+{
+<div>
+    <label> ID: </label>
+    @Html.TextBoxFor(f => f.ID)
+    <label> Name: </label>
+    @Html.TextBoxFor(f => f.Name)
+    <label> Price: </label>
+    @Html.TextBoxFor(f => f.Price)
+    <label> Style: </label>
+    @Html.TextBoxFor(f => f.Style)
+    <input type="submit" value="Submit" />
+</div>
+}
+

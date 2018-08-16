@@ -1,0 +1,15 @@
+﻿@model Food
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+@using (Html.BeginForm("ConfirmDelete", "CRUD"))
+{
+    <div>
+        <label>ID</label>
+        @Html.TextBoxFor(m => m.ID)
+        <input type="submit" value="delete"/>
+    </div>
+}
+
